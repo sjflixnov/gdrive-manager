@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  gdrive-manager:
+    container_name: api
+    image: gdrive-manager-img
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
